@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Generic Styles */
+body,
+html {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Nav Bar Styles */
+.navBar {
+  background-color: #deb891;
+  display: flex;
+  align-items: center;
+}
+.navBar_icon {
+  max-width: 84px;
+  margin-right: 20px;
+}
+.navBar_links {
+  display: flex;
+}
+.navBar_link {
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+/* Header Styles */
+.hero {
+  width: 100%;
+  background-color: red;
+  height: 1170px;
+  position: relative;
+  margin-bottom: 300px;
+}
+.hero_content {
+  height: 900px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("../assets/images/hero.png");
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero_title {
+  color: #254751;
+  font-size: 100px;
+}
+.hero_text {
+  background-color: #deb891b2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  padding: 10px 500px;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.hero_sprites {
+  position: absolute;
+  bottom: 70px;
+  background-color: #254751;
+  height: 341px;
+  display: flex;
+  position: relative;
+  clip-path: polygon(
+    0 0,
+    30% 0,
+    /* Adjusted start of the notch */ 35% 15%,
+    /* Adjusted inner left point */ 65% 15%,
+    /* Adjusted inner right point */ 70% 0,
+    /* Adjusted end of the notch */ 100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+.hero_sprite_one {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  max-width: 353px;
+}
+.hero_sprite_two {
+  bottom: 0;
+  right: 10px;
+  position: absolute;
+  max-width: 455px;
+}
