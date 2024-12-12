@@ -130,6 +130,7 @@ table {
 body,
 html {
   height: 100%;
+  background-color: #deb891;
 }
 
 img {
@@ -223,7 +224,7 @@ img {
 /* Lore Library Section */
 .lore-library {
   /* ? Adjust? */
-  height: 743px;
+  height: 543px;
 
   background-image: url("../assets/images/lore-library-hero.png");
   /* Position and center the image to scale nicely on all screens */
@@ -281,3 +282,18 @@ img {
   color: #254751;
   font-size: 25px;
 }
+/* Our Community styles */
+.our-community {
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../assets/images/our-community-hereo.png");
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  /* ? Adjust? */
+  height: 863px;
+}
+
