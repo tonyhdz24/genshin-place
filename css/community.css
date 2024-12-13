@@ -1,0 +1,22 @@
+body {
+  background-color: #a57356;
+}
+
+/* Sections */
+
+.community-events,
+.community-collabs,
+.community-newsletter {
+  margin-top: 50px;
+  height: 300px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.community-events,
+.community-collabs,
+.community-newsletter h1 {
+  font-size: 80px;
+}
