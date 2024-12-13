@@ -203,7 +203,7 @@ footer {
   display: flex;
   flex-direction: column;
   left: 50%;
-  padding: 10px 500px;
+  padding: 10px 20%;
   position: absolute;
   top: 50%;
   text-align: center;
@@ -235,7 +235,7 @@ footer {
 }
 .hero_sprite_two {
   bottom: 0;
-  right: 10px;
+  right: -50px;
   position: absolute;
   max-width: 455px;
 }
@@ -273,7 +273,7 @@ footer {
 }
 .lore-library_divider {
   margin: auto;
-  margin-left: 400px;
+  margin-left: 40%;
   width: 10px;
   height: 85%;
   background-color: #254751;
@@ -287,7 +287,7 @@ footer {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
-  padding: 0 50px;
+  padding: 0 10%;
 }
 
 .lore-library_link-container {
@@ -303,6 +303,7 @@ footer {
 }
 /* Our Community styles */
 .our-community {
+  position: relative;
   margin: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -314,18 +315,22 @@ footer {
   width: 100%;
   /* ? Adjust? */
   height: 863px;
+  z-index: 3;
 }
 
 /* Card styles */
 
 .cards {
+  position: relative;
+  z-index: 1;
+  margin-top: -100px;
   width: 100%;
-  background-color: red;
   height: 450px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   column-gap: 1%;
+  margin-bottom: 30px;
 }
 .card {
   background-color: #688b84;
@@ -363,9 +368,34 @@ footer {
 
 /* Footer */
 footer {
-  /* padding: 20px; */
+  color: white;
+  font-size: 20px;
+  padding: 30px 0px;
   background-color: #828032;
 }
 .footer-links {
   display: flex;
+}
+.footer_link-container {
+  margin-right: 25px;
+}
+.footer-links li:first-child {
+  margin-left: 25px;
+}
+.footer_link {
+  text-decoration: none;
+  color: inherit;
+}
+.footer_link-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-link_logo {
+  width: 24px; /* Set a suitable size for the logo */
+  height: auto; /* Maintain the aspect ratio */
+}
+.copyright-info {
+  margin-top: 20px;
+  text-align: center;
 }
