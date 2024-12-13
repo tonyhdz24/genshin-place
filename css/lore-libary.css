@@ -1,0 +1,22 @@
+body {
+  background-color: #a57356;
+}
+
+/* Sections */
+
+.wiki,
+.timeline,
+.blog {
+  margin-top: 50px;
+  height: 300px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wiki,
+.timeline,
+.blog h1 {
+  font-size: 80px;
+}
